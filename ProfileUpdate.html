@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Mon, 18 May 2015 15:32:04 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>AplHmr</title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>
+      function ok(){
+      if(document.getElementById('EID').value==""){
+	  alert('Mandatory field is emtty');
+	  return false;
+	 	  }
+}
+ window.history.forward();
+    function noBack() { window.history.forward(); }  
+    
+  
+  </script>
+	
+	
+  </head>
+  <body bgcolor="#E6E6FA" onload="noBack();"
+    onpageshow="if (event.persisted) noBack();" onunload="">
+    
+ 
+<div id="content" class="content" role="main">
+
+					
+					<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<p><script src="//code.jquery.com/jquery-1.10.2.js"></script></p>
+<p><script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script></p>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<p><script></p>
+<p>$(function() {</p>
+<p>$( "#datepicker" ).datepicker();</p>
+<p>});</p>
+<p></script></p>
+<h1><div align="center"><font color="#172BFF">HMR Profile upgrade form</font></div></h1>
+<form class="form-horizontal" action="ProfileConfirm.html" onsubmit="return ok()">
+<fieldset><!-- Form Name --><p></p>
+<legend><strong>PERSONAL INFORMATION</strong></legend>
+<p><!-- Text input--></p>
+<div class="control-group">
+<p><strong><font color="#FF303E">EmployeeID:</font></strong> <input id="EID" name="EmployeeID" type="text"></p>
+<p><strong>First name:</strong> <input id="fname" name="firstname" type="text"></p>
+<p><strong>Last name:</strong> <input id="lname" name="lastname" type="text"></p>
+</div>
+<p><!-- Multiple Radios --></p>
+<div class="control-group"><strong><label>Gender</label></strong><p></p>
+<p><input id="sex-0" checked="checked" name="sex" value="Male" type="radio">&nbsp; Male&nbsp;&nbsp;&nbsp; <input id="sex-1" name="sex" value="Female" type="radio"><label class="radio" for="sex-1"> Female</label></p>
+<p></p></div>
+<p><!-- Multiple Radios (inline) --></p>
+<div class="control-group"><strong><label class="control-label" for="exp">Years of Experience</label></strong><p></p>
+<p><input id="exp-0" checked="checked" name="exp" value="1" type="radio">1&nbsp;&nbsp;&nbsp; <input id="exp-1" name="exp" value="2" type="radio">2&nbsp;&nbsp;&nbsp; <input id="exp-2" name="exp" value="3" type="radio">3 &nbsp;&nbsp; <input id="exp-3" name="exp" value="4" type="radio">4 &nbsp;&nbsp; <input id="exp-4" name="exp" value="5" type="radio">5 &nbsp;&nbsp; <input id="exp-5" name="exp" value="6" type="radio">6 &nbsp;&nbsp; <input id="exp-6" name="exp" value="7" type="radio"><label class="radio inline" for="exp-6">7</label></p>
+<p></p></div>
+<p>Date: <input id="datepicker" type="text"></p>
+<p><!-- Multiple Checkboxes --></p>
+<div class="control-group"><strong><label class="control-label" for="profession">Profession</label></strong><p></p>
+<p><input id="profession-0" name="profession" value="Manual Tester" type="checkbox"> System Engineer  &nbsp;&nbsp;&nbsp; <input id="profession-1" name="profession" value="Automation Tester" type="checkbox"><label class="checkbox" for="profession-1"> Signal Engineer
+</label></p>
+<p></p></div>
+<p><!-- File Button --></p>
+<div class="control-group"><strong><label class="control-label" for="photo">Profile Picture</label></strong><p></p>
+<p><input id="photo" class="input-file" name="photo" type="file"></p></div>
+<p><!-- Multiple Checkboxes (inline) --></p>
+<div class="control-group"></div>
+<div class="control-group"></div>
+<div class="control-group"><strong><label>Automation Tool</label></strong><p></p>
+<p><input id="tool-0" name="tool" value="QTP" type="checkbox">&nbsp; Test Bench</p>
+<p><input id="tool-1" name="tool" value="Selenium IDE" type="checkbox">&nbsp; Recording Tool</p>
+<p><input id="tool-1" name="tool" value="Selenium IDE" type="checkbox">&nbsp; Perform InteGration</p>
+<p><input id="tool-2" name="tool" value="Selenium Webdriver" type="checkbox">&nbsp; Simulate I/O</p></div>
+<p><!-- Select Basic --></p>
+<div class="control-group">
+<p><strong><label>Working place</label></strong></p>
+<div class="controls"><select id="continents" class="input-xlarge" name="continents"><option>Uppal</option><option>Lingampally</option><option>Kukatpally</option><option>Secundrabad</option><option>Dilshuknagar</option><option>Nagole</option><option>Ameerpet</option></select></div>
+</div>
+<p><!-- Select Multiple --></p>
+<div class="control-group">
+<p><strong><label>Additional Skills</label></strong></p>
+<div class="controls"><select id="selenium_commands" class="input-xlarge" multiple="multiple" name="selenium_commands"><option>Automatic Train Supervission</option><option>Train Management System</option><option>Signal Principles</option><option>Wait Commands</option><option>System Configuaration</option><option>Signal Analytics</option></select></div>
+</div>
+<p><!-- Button --></p>
+
+<div class="control-group" align="center">
+<div class="button"><button id="submit" class="btn btn-info" name="submit">Submit</button><input type="Reset"><input type="button" onclick="javascript:location.href='home.html';" name="Back" value="Back"></div>
+
+</div>
+</fieldset>
+</form>
+<p>&nbsp;</p>
+  </body>
+</html>
